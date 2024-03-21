@@ -42,12 +42,12 @@ import std_msgs.msg
 import sensor_msgs.srv
 import threading
 import time
-from camera_calibration.calibrator import MonoCalibrator, Patterns
+from b3rb_camera_calibration.calibrator import MonoCalibrator, Patterns
 try:
     from queue import Queue
 except ImportError:
     from Queue import Queue
-from camera_calibration.calibrator import CAMERA_MODEL
+from b3rb_camera_calibration.calibrator import CAMERA_MODEL
 from rclpy.qos import qos_profile_system_default
 from rclpy.qos import QoSProfile
 

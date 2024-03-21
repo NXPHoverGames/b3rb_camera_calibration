@@ -1,22 +1,21 @@
 #!/usr/bin/env python
 from setuptools import setup, find_packages
 
-PACKAGE_NAME = "camera_calibration"
+PACKAGE_NAME = "b3rb_camera_calibration"
 
 setup(
     name=PACKAGE_NAME,
     version='3.0.4',
-    packages=["camera_calibration", "camera_calibration.nodes"],
+    packages=["b3rb_camera_calibration", "b3rb_camera_calibration.nodes"],
     data_files=[
     ('share/ament_index/resource_index/packages',
       ['resource/' + PACKAGE_NAME]),
     ('share/' + PACKAGE_NAME, ['package.xml']),
+    ('share/' + PACKAGE_NAME + '/launch', ['launch/b3rb_camera_calibration_launch.py']),
     ],
     py_modules=[],
     package_dir={'': 'src'},
-    install_requires=[
-        'setuptools',
-    ],
+    install_requires=['setuptools',],
     zip_safe=True,
     author='James Bowman, Patrick Mihelich',
     maintainer='Vincent Rabaud, Steven Macenski, Joshua Whitley',
@@ -30,8 +29,8 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'cameracalibrator = camera_calibration.nodes.cameracalibrator:main',
-            'cameracheck = camera_calibration.nodes.cameracheck:main',
+            'cameracalibrator = b3rb_camera_calibration.nodes.cameracalibrator:main',
+            'cameracheck = b3rb_camera_calibration.nodes.cameracheck:main',
         ],
     },
 )

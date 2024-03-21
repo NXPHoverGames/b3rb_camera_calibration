@@ -36,8 +36,8 @@ import cv2
 import functools
 import message_filters
 import rclpy
-from camera_calibration.camera_calibrator import OpenCVCalibrationNode
-from camera_calibration.calibrator import ChessboardInfo, Patterns
+from b3rb_camera_calibration.camera_calibrator import OpenCVCalibrationNode
+from b3rb_camera_calibration.calibrator import ChessboardInfo, Patterns
 from message_filters import ApproximateTimeSynchronizer
 
 def optionsValidCharuco(options, parser):

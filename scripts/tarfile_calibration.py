@@ -39,7 +39,7 @@ import cv2
 import cv_bridge
 import tarfile
 
-from camera_calibration.calibrator import MonoCalibrator, StereoCalibrator, CalibrationException, ChessboardInfo
+from b3rb_camera_calibration.calibrator import MonoCalibrator, StereoCalibrator, CalibrationException, ChessboardInfo
 
 import rclpy
 import sensor_msgs.srv

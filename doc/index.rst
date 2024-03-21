@@ -1,4 +1,4 @@
-camera_calibration
+b3rb_camera_calibration
 ==================
 
 The camera_calibration package contains a user-friendly calibration tool,

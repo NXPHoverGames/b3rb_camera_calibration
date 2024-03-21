@@ -37,7 +37,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'camera_calibration'
+project = 'b3rb_camera_calibration'
 copyright = '2009, Willow Garage, Inc.'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -158,7 +158,7 @@ html_theme = 'default'
 #html_file_suffix = ''
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'camera_calibrationdoc'
+htmlhelp_basename = 'b3rb_camera_calibrationdoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -172,7 +172,7 @@ htmlhelp_basename = 'camera_calibrationdoc'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'camera_calibration.tex', 'stereo\\_utils Documentation',
+  ('index', 'b3rb_camera_calibration.tex', 'stereo\\_utils Documentation',
    'James Bowman', 'manual'),
 ]
 
