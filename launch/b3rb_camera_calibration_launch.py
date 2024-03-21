@@ -20,7 +20,7 @@ def generate_launch_description():
             [get_package_share_directory('foxglove_bridge'), 'launch', 'foxglove_bridge_launch.xml'])]),
             launch_arguments=[('address','{:s}'.format(ip)),
                             ('capabilities','[clientPublish,services,connectionGraph,assets]'),
-                            ('topic_whitelist', "/calibration_camera_feed"),
+                            ('topic_whitelist','["/calibration_camera_feed"]'),
                             ('service_whitelist', '[""]'),
                             ('param_whitelist', '[""]'),
                             ('send_buffer_limit','10000000'),
