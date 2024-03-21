@@ -41,7 +41,7 @@ def generate_launch_description():
             parameters=[{'size': '6x9',
                          'square': 0.02,
                          'camera': '/my_camera'}],
-            remappings=[('/image', 'image')],
+            remappings=[('/image', '/camera/image_raw')],
         )
     
     return LaunchDescription(ARGUMENTS + [
