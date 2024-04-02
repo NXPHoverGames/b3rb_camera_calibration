@@ -45,7 +45,7 @@ def generate_launch_description():
         )
     
     return LaunchDescription(ARGUMENTS + [
-        b3rb_camera_calibration,
+        #b3rb_camera_calibration,
         foxglove_websockets,
         cam,
     ])
