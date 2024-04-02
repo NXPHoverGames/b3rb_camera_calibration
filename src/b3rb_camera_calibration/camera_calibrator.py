@@ -114,7 +114,7 @@ class CalibrationNode(Node):
         msub.registerCallback(self.queue_monocular)
 
         #Publish calibration Image through ROS
-        self.camera_pub = self.create_publisher(sensor_msgs.msg.Image, 'calibration_camera_feed', 10)
+        self.camera_pub = self.create_publisher(sensor_msgs.msg.CompressedImage, 'calibration_camera_feed', 10)
         #Subscription to mange the control of calibration through ROS msgs
         self.calibration_control_sub = self.create_subscription(std_msgs.msg.String,'calibration_control',self.calibration_control_callback,10)
 
@@ -317,5 +317,5 @@ class OpenCVCalibrationNode(CalibrationNode):
                 #print "linear", linerror
             self.putText(display, msg, (width, self.y(1)))
 
-        msg = self.br.cv2_to_imgmsg(display, "bgr8")
+        msg = self.br.cv2_to_compressed_imgmsg(display)
         self.camera_pub.publish(msg)
